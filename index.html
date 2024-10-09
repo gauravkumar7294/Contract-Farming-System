@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriContract</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Add navigation for AgriContract (Home, Farmers, Buyers, etc.) -->
+        <a href="index.html">Home</a>
+        <a href="farmers.html">Farmers</a>
+        <a href="buyers.html">Buyers</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="product-details">
+        <div class="image-slider">
+            <div class="product-images">
+                <!-- Replace these images with actual farming-related images -->
+                <img src="img/crops1.jpg" class="active" alt="Crop Image 1">
+                <img src="img/crops2.jpg" alt="Crop Image 2">
+                <img src="img/crops6.jpg" alt="Crop Image 3">
+                <img src="img/crops4.jpg" alt="Crop Image 4">
+            </div>
+        </div>
+        <div class="details">
+            <h2 class="product-brand"> Wheat </h2>
+            <p class="product-short-des">Secure a contract for the upcoming wheat season with verified farmer.</p>
+            <span class="product-price">₹50,000</span>
+            <span class="product-actual-price">₹70,000</span>
+            <span class="product-discount">(28% off)</span>
+
+            <p class="product-sub-heading"> Available Quantity (in tons)</p>
+
+            <input type="radio" name="quantity" value="5" checked hidden id="5-tons">
+            <label for="5-tons" class="size-radio-btn check">5 tons</label>
+            <input type="radio" name="quantity" value="10" checked hidden id="10-tons">
+            <label for="10-tons" class="size-radio-btn check">10 tons</label>
+            <input type="radio" name="quantity" value="20"  checked hidden id="20-tons">
+            <label for="20-tons" class="size-radio-btn check">20 tons</label>
+
+            <div class="btn-container">
+                <button class="btn cart-btn">Interested</button>
+                <button class="btn">Chat with farmer</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contract-description">
+        <h2 class="contract-heading">Contract Description for the given Product:</h2>
+        <p class="contract-details">
+            This contract offers a stable supply of high-quality wheat for the upcoming season, with a guaranteed minimum price of <span class="price">₹50,000 per ton</span>. 
+            The buyer is committed to <span class="commitment">timely payments</span> ensuring a smooth transaction process.
+        </p>
+    </section>    
+
+    <!--Cards-container for Available Contracts (example: Crops) -->
+    <section class="product">
+        <h2 class="product-category">Explore More Available Crops</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% Off</span>
+                    <img src="img/crops1.jpg" class="product-thumb" alt="rice">
+                    <button class="card-btn">Request Contract</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Rice</h2>
+                    <p class="product-short-des">Rice for the upcoming season.</p>
+                    <span class="price">₹50,000</span><span class="actual-price">₹70,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% Off</span>
+                    <img src="img/crops2.jpg" class="product-thumb" alt="millets">
+                    <button class="card-btn">Request Contract</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Millets</h2>
+                    <p class="product-short-des">Millets farming contract with secure buyers.</p>
+                    <span class="price">₹40,000</span><span class="actual-price">₹50,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">15% Off</span>
+                    <img src="img/crops3.jpg" class="product-thumb" alt="pumpkin">
+                    <button class="card-btn">Request Contract</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Pumpkin</h2>
+                    <p class="product-short-des">Secure contract for Pumpkin supply.</p>
+                    <span class="price">₹30,000</span><span class="actual-price">₹35,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% Off</span>
+                    <img src="img/crops7.jpg" class="product-thumb" alt="cereals">
+                    <button class="card-btn">Request Contract</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Cereals</h2>
+                    <p class="product-short-des">Cereals for the upcoming season.</p>
+                    <span class="price">₹50,000</span><span class="actual-price">₹70,000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% Off</span>
+                    <img src="img/crops8.jpg" class="product-thumb" alt="mushroom">
+                    <button class="card-btn">Request Contract</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Mushroom</h2>
+                    <p class="product-short-des">Mushroom for the upcoming season.</p>
+                    <span class="price">₹50,000</span><span class="actual-price">₹70,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cards-container for Buyers -->
+    <section class="product">
+        <h2 class="product-category">Available Buyers</h2>
+       
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/images1.jpg" class="product-thumb" alt="Buyer 1">
+                    <button class="card-btn">View Buyer</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Grain Corporation</h2>
+                    <p class="product-short-des">Leading buyer for wheat and corn.</p>
+                    <span class="price">50 Contracts</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/images2.jpg" class="product-thumb" alt="Buyer 2">
+                    <button class="card-btn">View Buyer</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Agri-Trade</h2>
+                    <p class="product-short-des">Rice and wheat buyer for export.</p>
+                    <span class="price">30 Contracts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="connect-section">
+        <a href="contact.html" class="connect-btn">Want to connect with a great producer/buyer? : Contact us</a>
+    </section>
+    
+
+    <section class="find-section">
+        <a href="search.html" class="find-btn">
+            <img src="img/place.png" alt="Location Icon" class="find-icon">
+            <span class="find-text">Find the Farmer/Buyer Nearby</span>
+        </a>
+    </section>
+    
+    <section class="payment-section">
+        <div class="payment-container">
+            <img src="img/payment.png" alt="Payment Icon" class="payment-icon">
+            <div class="payment-details">
+                <h2 class="payment-heading">Make a Secure Payment</h2>
+                <p class="payment-description">Ensure seamless transactions by making secure payments to the farmers or buyers.</p>
+                <button class="payment-btn">Proceed to Payment</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AgriContract. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

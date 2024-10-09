@@ -1,0 +1,435 @@
+.product-details{
+    width:100%;
+    padding:60px 10vw;
+    display:flex;
+    justify-content:space-between;
+}
+
+.image-slider{
+    width:500px;
+    height:500px;
+    position:relative;
+    background-image:url('../img/product\ image\ 1.png');
+    background-size:cover;
+}
+
+.product-images{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    background:#fff;
+    border-radius:5px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    height:100px;
+    grid-gap:10px;
+    padding:10px;
+}
+
+.product-images img{
+    width:100%;
+    height:80pxx;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.product-images img-active{
+    opacity:0.5;
+}
+
+.details{
+    width:505;
+}
+
+.details.product-brand{
+    text-transform:capitalize;
+    font-size:30px;
+}
+
+.details.product-short-des{
+    font-size:25px;
+    line-height:30px;
+    height:auto;
+    margin:15px 0 30px;
+}
+
+.product-price{
+    font-weight:700;
+    font-size:30px;
+}
+
+.product-actual-price{
+    font-size:30px;
+    opacity:0.5;
+    text-decoration:line-through;
+    margin:0 20px;
+    font-weight:300;
+}
+
+.product-discount{
+    color:#ff7d7d;
+    font-size:20px;
+}
+
+.product-sub-headiing{
+    font-size:30px;
+    text-transform:uppercase;
+    margin:60px 0 10px;
+    font-weight:300;
+}
+
+.size-radio-btn{
+    display:inline-block;
+    width:80px;
+    height:80px;
+    text-align:center;
+    font-size:20px;
+    border:1px solid #383838;
+    border-radius:50%;
+    margin:10px;
+    margin-left:0;
+    line-height:80px;
+    color:#383838;
+    cursor:pointer;
+}
+
+.size-radio-btn.check{
+    background:#383838;
+    color:#fff;
+}
+
+.btn{
+    width:48%;
+    padding:20px;
+    border-radius:25px;
+    background:none;
+    border:1px solid #383838;
+    color:#383838;
+    font-size:15px;
+    cursor:pointer;
+    margin:20px 0;
+}
+
+/* General button styling */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Styling for the previous button */
+.pre-btn img {
+    width: 64px;  /* Adjust the width as needed */
+    height: 34px; /* Adjust the height as needed */
+}
+
+/* Styling for the next button */
+.nxt-btn img {
+    width: 64px;  /* Adjust the width as needed */
+    height: 34px; /* Adjust the height as needed */
+}
+
+/* Optional: Add some padding to the buttons */
+.pre-btn, .nxt-btn {
+    padding: 10px; /* Adjust padding to position the arrow as needed */
+}
+
+
+.card-btn{
+    margin-right:2%;
+    background:#383838;
+    color:#fff;
+}
+
+.detail-des{
+    padding:0 10vw;
+    text-transform:capitalize;
+}
+
+.heading{
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.des{
+    color:#383838;
+    line-height:25px;
+}
+
+.logo {
+    width: 300px;  /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+}
+
+.contract-description {
+    padding: 20px;
+    background-color: hsla(340, 9%, 81%, 0.495);
+    border: 1px solid #dddddd9e;
+    border-radius: 8px;
+    margin: 30px 45px;
+}
+
+.contract-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contract-details {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contract-details .price {
+    font-weight: bold;
+    color: #e74c3c; /* Red color for emphasis */
+}
+
+.contract-details .commitment {
+    font-weight: bold;
+    color: #2ecc71; /* Green color for emphasis */
+}
+
+.btn-container {
+    text-align: center; /* Optional: center align the buttons */
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px; /* Adjust the margin as needed */
+    padding: 20px 20px; /* Adjust the padding as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cart-btn {
+    background-color: #3498db; /* Example color for the "Interested" button */
+    color: white;
+}
+
+.btn {
+    background-color: #2ecc71; /* Example color for the "Chat with farmer" button */
+    color: white;
+}
+
+
+.product {
+    margin: 20px; /* Adjust margin around the entire section */
+}
+
+.product-category {
+    margin-bottom: 10px; /* Reduce space below the heading */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+}
+
+.product-container {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    gap: 10px; /* Adjust space between product cards */
+}
+
+.product-card {
+    background-color: #fff; /* Background color for product cards */
+    border-radius: 8px; /* Rounded corners for product cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for product cards */
+    padding: 10px; /* Space inside the product card */
+    flex: 0 0 auto; /* Prevent product cards from shrinking */
+    width: 250px; /* Fixed width for product cards */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.product-image {
+    position: relative; /* Allows positioning of discount tag */
+}
+
+.product-thumb {
+    width: 100%; /* Ensure image fills the card width */
+    height: 180; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match the rounded corners */
+}
+
+.card-btn {
+    position: absolute; /* Position button within the image container */
+    bottom: 10px; /* Position it at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Adjust button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.product-info {
+    margin-top: 10px; /* Space above product info */
+}
+
+.product-brand {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Space below the brand name */
+}
+
+.product-short-des {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #555; /* Adjust text color as needed */
+    margin-bottom: 5px; /* Space below short description */
+}
+
+.price {
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Bold price text */
+    color: #333; /* Adjust color as needed */
+}
+
+.actual-price {
+    font-size: 14px; /* Adjust font size for actual price */
+    text-decoration: line-through; /* Strikethrough for actual price */
+    color: #999; /* Color for actual price */
+    margin-left: 5px; /* Space between prices */
+}
+
+/* Styling for the connect-section to center the button */
+/* Styling for the connect-section to center the button */
+/* Styling for the connect-section to center the button */
+.connect-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; /* Space around the section */
+}
+
+/* Styling for the connect button */
+.connect-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px; /* Adjust padding for button size */
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    text-align: center; /* Center align text */
+}
+
+.connect-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+/* Container for the button to center it */
+.find-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; /* Space around the section */
+}
+
+/* Styling for the circular button */
+.find-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Padding for button size */
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 50%; /* Fully rounded circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    text-align: center; /* Center align text */
+    position: relative; /* For positioning icon and text */
+    width: 200px; /* Width of the button */
+    height: 200px; /* Height of the button */
+}
+
+.find-btn:hover {
+    background-color: #0a5d89; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+/* Styling for the location icon inside the button */
+.find-icon {
+    width: 50px; /* Width of the icon */
+    height: 50px; /* Height of the icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Styling for the text next to the icon */
+.find-text {
+    display: inline-block;
+    max-width: 120px; /* Maximum width for text */
+    font-size: 14px; /* Font size for text */
+    text-align: center; /* Center align text */
+}
+
+
+/* Payment section container */
+.payment-section {
+    display: flex;
+    justify-content: flex-end; /* Align to the right side near the available buyer section */
+    margin: 50px 40vw; /* Adjust margin for positioning */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Payment container styling */
+.payment-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between icon and text */
+}
+
+/* Styling for the payment icon */
+.payment-icon {
+    width: 70px; /* Adjust width of the icon */
+    height: 50px; /* Adjust height of the icon */
+}
+
+/* Payment details text styling */
+.payment-details {
+    max-width: 400px; /* Limit width of text block */
+}
+
+.payment-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.payment-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button for payment action */
+.payment-btn {
+    padding: 10px 20px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.payment-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
